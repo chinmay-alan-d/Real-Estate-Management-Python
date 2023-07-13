@@ -138,7 +138,6 @@ class Frames(object):
         ind = self.verify_get('RealEstates.csv',i)
         rows.pop(int(ind))
 
-        print("hello from below rows")
         with open("RealEstates.csv", 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerows(rows)
